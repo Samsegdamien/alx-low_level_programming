@@ -1,5 +1,3 @@
-Task 4
-
 #include <stdio.h>
 /**
  * main - entry point
