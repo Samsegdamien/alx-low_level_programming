@@ -1,38 +1,13 @@
-#include "main.h"
-/**
-*main - entry point
-*Return: 0 (Success)
-*/
-int main(void)
-{
-int i = 0;
-char text[] = "_putchar";
-
-while (text[i] != '\')
-{
-_putchar(text[i]);
-i++;
-}
-_putchar('\');
-
-return (0);
-} 
-
-1
-#include "main.h"
+#include <unistd.h>
 
 /**
-*print_alphabet - prints the alphabet, in lowercase, followed by a new line
-*/
-
-void print_alphabet(void)
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
 {
-char letter = 'a';
-
-while (letter <= 'z')
-{
-_putchar(letter);
-letter++;
-}
-_putchar('\');
+  return (write(1, &c, 1));
 }
