@@ -1,4 +1,3 @@
-
 #include "main.h"
 /**
 *main - entry point
@@ -17,4 +16,4 @@ i++;
 _putchar('\n');
 
 return (0);
-} 
+}
