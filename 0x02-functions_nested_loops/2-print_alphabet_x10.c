@@ -17,8 +17,10 @@ while (letter <= 'z')
 {
 _putchar(letter);
 letter++;
+}
 
 _putchar('\n');
 letter = 'a';
 number++;
+}
 }
