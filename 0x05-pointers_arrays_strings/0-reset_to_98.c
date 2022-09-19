@@ -1,1 +1,1 @@
-Yy
+b0VIM 8.1� rootfc71906ee0ba/alx-low_level_programming/0x05-pointers_arrays_strings/0-reset_to_98.c U3210#"! Utpad�;�����fbIG=;}	*n = 98;{void reset_to_98(int *n) */ *e@ni: pointer to the variable to update * the pointer points to to 98 * reset_to_98 - updates the value of the variable/**ii#include "holberton.h"
