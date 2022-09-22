@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "main.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
 *swap_int - Swaps the value of one interger variable to the other
@@ -8,8 +8,8 @@
 *return: void
 */
 
-void swap_int(int *a, int *b)
-{int swapper;
+void swap_int(int *a, int *b)
+{int swapper;
 swapper = *a;
 *a = *b;
 *b = swapper;
