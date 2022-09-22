@@ -5,7 +5,7 @@
 *
 *@s: The string to be printed in reverse order
 */
-void print_rev(char *s)
+void print_rev(char *s)
 {
 int abn = 0;
 while (*(s + 1))
