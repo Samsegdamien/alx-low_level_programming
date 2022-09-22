@@ -6,11 +6,11 @@
 *Return: stringLength
 */
 
-int _strlen(char *s)
-{int stringLength = 0;
-while (*s != 0)
+int _strlen(char *s)
+{int stringLength = 0;
+while (*s != 0)
 {stringLength++;
 s++;
 }
-return (stringLength);
+return (stringLength);
 }
