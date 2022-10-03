@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
-* _abs - find absolute value of an integer
-* @num: integer to check
-*
-* Return: absolute value of num
-*/
+ * _abs - main function
+ *
+ * @n: integer to make absolute
+ * Return: int or int times negative
+ *
+ */
 
-int _abs(int num)
+int _abs(int n)
 {
-if (num < 0)
-{
-return (-num);
-}
-return (num);
+	if (n > 0)
+		return (n);
+	else
+		return (n * -1);
 }

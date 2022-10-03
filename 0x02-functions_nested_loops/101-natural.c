@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 /**
-* main - entry point
-*
-* Return: 0 if successful
-*/
+ * main - main function
+ *
+ * Return: always 0
+ */
 
 int main(void)
 {
-int mult = 0;
-int sum = 0;
+	int a;
+	int b = 0;
 
-while (mult < 1024)
-{
-if (mult % 3 == 0 || mult % 5 == 0)
-{
-sum += mult;
-}
-mult++;
-}
-printf("%d\n", sum);
-return (0);
+	for (a = 0; a < 1024; a++)
+	{
+		if (a % 3 == 0 || a % 5 == 0)
+		{
+			b += a;
+		}
+	}
+	printf("%d\n", b);
+	return (0);
 }

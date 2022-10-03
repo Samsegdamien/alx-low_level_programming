@@ -1,28 +1,16 @@
-#include "main.h" 
-  
- /** 
- *factorial - A function that finds the factorial of an n interger 
- *@n: Number to find the factorial of 
- * Return: Return the  the factorial value 
- */ 
-  
-  
- int factorial(int n) 
- { 
- if (n < 0) 
- { 
- return (-1); 
- } 
- else if (n == 0) 
- { 
- return (1); 
- } 
- else if (n > 1) 
- { 
- return (n * factorial(n - 1)); 
- } 
- else 
- { 
- return (n); 
- } 
- }
+#include "main.h"
+
+/**
+ * factorial - gives factorial of number
+ * @n: number to use
+ * Return: returns factor or -1
+ */
+
+int factorial(int n)
+{
+	if (n < 0)
+		return (-1);
+	if (n > 0)
+		return (n * factorial(n - 1));
+	return (1);
+}

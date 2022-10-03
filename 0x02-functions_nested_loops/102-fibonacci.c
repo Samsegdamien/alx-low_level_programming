@@ -1,39 +1,31 @@
 #include <stdio.h>
 
 /**
-* main - entry point in c
-*
-* Return: 0 if successful
-*/
+ * main - main function
+ *
+ * Return: nothing
+ */
 
 int main(void)
 {
-long a = 1;
-long b = 2;
-int n = 3;
+	int counter = 2;
+	long int a = 1;
+	long int b = a + 1;
+	long int c = a + b;
 
-printf("%li, ", a);
-printf("%li, ", b);
-
-while (n < 50)
-{
-long fib = a + b;
-
-printf("%li, ", fib);
-a = b;
-b = fib;
-n++;
-}
-
-while (n == 50)
-{
-long fib = a + b;
-
-printf("%li\n", fib);
-a = b;
-b = fib;
-n++;
-}
-
-return (0);
+	printf("%ld, %ld, ", a, b);
+	while (counter < 50)
+	{
+		printf("%ld", c);
+		counter++;
+		a = b;
+		b = c;
+		c = a + b;
+		if (counter < 50)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+	return (0);
 }

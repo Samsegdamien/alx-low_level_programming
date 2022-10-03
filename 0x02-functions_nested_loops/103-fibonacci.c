@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 /**
-* main - entry point in c
-*
-* Return: 0 if successful
-*/
+ * main - main function
+ *
+ * Return: nothing
+ */
 
 int main(void)
 {
-int a = 1;
-int b = 2;
-int fib = 0;
-int sum = 2;
+	int counter = 0;
+	long int a = 1;
+	long int b = a;
+	long int c = a + b;
 
-while (fib < 4000000)
-{
-fib = a + b;
-if (fib % 2 == 0)
-{
-sum += fib;
-}
-a = b;
-b = fib;
-}
-printf("%i\n", sum);
-return (0);
+	while (c < 4000000)
+	{
+		if (c % 2 == 0)
+		{
+			counter += c;
+		}
+		a = b;
+		b = c;
+		c = a + b;
+	}
+	printf("%d\n", counter);
+	return (0);
 }

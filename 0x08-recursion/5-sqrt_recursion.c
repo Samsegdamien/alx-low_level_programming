@@ -1,40 +1,40 @@
-#include "main.h" 
-  
- /** 
- *squareroot_checker - function that  check for the square root of an interger 
- *@a: Takes a guess at sqrt 
- *@b: The number to find its  square root 
- * Return: -1 or squaroot  of b 
- */ 
-  
- int squareroot_checker(int a, int b) 
- { 
- if (a * a == b) 
- { 
- return (a); 
- } 
- if (a * a  > b) 
- { 
- return (-1); 
- } 
- return (squareroot_checker(a + 1, b)); 
- } 
-  
-  
-  
-  
- /** 
- *_sqrt_recursion - A function that returns the natural square root of a number 
- *@n: The interger value to find its square root 
- *Return: Return the natural square root or -1 
- */ 
-  
-  
- int _sqrt_recursion(int n) 
- { 
- if (n == 0) 
- { 
- return (0); 
- } 
- return (squareroot_checker(1, n)); 
- }
+#include "main.h"
+
+/**
+ * helper - helps decide if i'm right
+ * @i: integer to guess
+ * @n: integer to get root of
+ * Return: value of root
+ */
+
+int helper(int i, int n)
+{
+	int j;
+
+	if (i * i != n)
+	{
+		if (i > n)
+		{
+			return (-1);
+		}
+		j = helper(i + 1, n);
+		return (j + 1);
+	}
+	return (0);
+}
+
+/**
+ * _sqrt_recursion - returns square root
+ * @n: integer to return
+ * Return: returns int of squareroot
+ */
+
+int _sqrt_recursion(int n)
+{
+	int i = 0;
+
+	if (helper(i, n) == n && n != 1)
+		return (-1);
+	return (helper(i, n));
+
+}
